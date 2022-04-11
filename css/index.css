@@ -19,12 +19,12 @@ body {
 }
 
 section {
-  width: 21vw;
+  max-width: 19rem;
 }
 
 main {
   display: inline-flex;
-  margin-top: 5rem;
+  margin: 4rem 1rem 2rem 1rem;
 }
 
 h1 {
@@ -40,7 +40,7 @@ h2 {
 }
 
 p {
-  width: 15vw;
+  max-width: 13rem;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
@@ -58,13 +58,13 @@ img {
 
 main a {
   text-decoration: none;
-  width: 146px;
-  height: 48px;
+  width: 9rem;
+  height: 3rem;
   display: block;
   text-decoration: none;
   background-color: hsl(0, 0%, 95%);
   text-align: center;
-  line-height: 48px;
+  line-height: 3rem;
   border: 3px solid hsl(0, 0%, 95%);
   border-radius: 2rem;
   margin-top: 5rem;
@@ -128,11 +128,17 @@ main a {
 /* === Footer Styles === */
 
 footer {
-  margin-top: 5vw;
-  font-size: 11px;
+  margin-top: 3rem;
+  font-size: .7rem;
   text-align: center;
 }
 
 footer a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
