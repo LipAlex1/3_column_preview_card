@@ -28,7 +28,13 @@ main {
 }
 
 h1 {
-  display: none;
+  position: absolute;
+  top: auto;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
 h2 {
